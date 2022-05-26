@@ -134,6 +134,31 @@ section .content p {
     justify-content: center;
     gap: 3.2rem;
 }
+
+ /* Custom Colors */
+#services .card circle {
+    fill: var(--brand-light);
+}
+
+#navigation .logo path[fill*='#00856f'],
+#backToTopButton circle {
+    fill: var(--primary-color);
+}
+
+#button.open-menu path[stroke*='#00856f'],
+#contact li path {
+    stroke: var(--primary-color);
+}
+
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path {
+    fill: white;
+}
+
+#navigation.scroll button.open-menu path[stroke*='#00856f']{
+    stroke: white;
+}
+
  /*NAVIGATION */
  nav {
     display: flex;
@@ -327,7 +352,6 @@ body.menu-expanded button {
     z-index: 100;
 }
 
-body.menu-expanded #navigation .logo path,
 body.menu-expanded .logo path {
     fill: white;
 }
