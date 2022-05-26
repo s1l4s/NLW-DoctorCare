@@ -326,7 +326,8 @@ body.menu-expanded button {
     position: relative;
     z-index: 100;
 }
-  
+
+body.menu-expanded #navigation .logo path,
 body.menu-expanded .logo path {
     fill: white;
 }
